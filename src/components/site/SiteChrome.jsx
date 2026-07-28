@@ -62,8 +62,8 @@ export function SiteFooter() {
         </div>
         <div>
           <div className="mb-3 text-xs uppercase tracking-[0.3em] text-accent">Contact</div>
-          <p className="text-sm">+256 700 123 456</p>
-          <p className="text-sm">hello@estery.co.ug</p>
+          <p className="text-sm">+256-776-804433</p>
+          <p className="text-sm">esteryfurniture2@gmail.com</p>
         </div>
         <div>
           <div className="mb-3 text-xs uppercase tracking-[0.3em] text-accent">Explore</div>

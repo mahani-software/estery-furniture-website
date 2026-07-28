@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site/SiteChrome";
 import { categories, products, formatUGX } from "@/lib/products";
-import logo from "@/assets/logo.png";
 import hero from "@/assets/hero.jpg";
 import badge from "@/assets/estery-badge.jpeg";
 
@@ -37,7 +36,6 @@ function Index() {
             />
           </div>
           <div className="order-2 text-center md:order-1 md:text-left">
-            <img src={logo} alt="Estery Furniture" className="mx-auto h-20 w-20 object-contain drop-shadow-2xl md:mx-0 md:h-24 md:w-24" width={96} height={96} />
             <h1 className="mt-3 text-3xl leading-tight md:text-5xl">
               Furniture that tells your story.
             </h1>

@@ -28,8 +28,8 @@ function Contact() {
           <div className="mt-3 space-y-4 text-sm">
             <div><div className="text-xs uppercase tracking-widest text-accent">Showroom</div><div className="mt-1">Plot 42, Ntinda Industrial Area, Kampala</div></div>
             <div><div className="text-xs uppercase tracking-widest text-accent">Hours</div><div className="mt-1">Mon–Sat · 9:00–19:00</div></div>
-            <div><div className="text-xs uppercase tracking-widest text-accent">Phone</div><div className="mt-1">+256 700 123 456</div></div>
-            <div><div className="text-xs uppercase tracking-widest text-accent">Email</div><div className="mt-1">hello@estery.co.ug</div></div>
+            <div><div className="text-xs uppercase tracking-widest text-accent">Phone</div><div className="mt-1">+256-776-804433</div></div>
+            <div><div className="text-xs uppercase tracking-widest text-accent">Email</div><div className="mt-1">esteryfurniture2@gmail.com</div></div>
           </div>
         </div>
         <form

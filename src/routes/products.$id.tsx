@@ -59,7 +59,7 @@ function ProductPage() {
               <Link to="/contact" className="rounded-full bg-primary px-7 py-3 text-sm font-medium text-primary-foreground hover:bg-accent hover:text-accent-foreground">
                 Request a quote
               </Link>
-              <a href="tel:+256700123456" className="rounded-full border border-border px-7 py-3 text-sm font-medium hover:border-accent hover:text-accent">
+              <a href="tel:+256776804433" className="rounded-full border border-border px-7 py-3 text-sm font-medium hover:border-accent hover:text-accent">
                 Call the showroom
               </a>
             </div>
