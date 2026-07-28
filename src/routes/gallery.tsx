@@ -23,17 +23,17 @@ function Gallery() {
 
   return (
     <SiteShell>
-      <section className="border-b border-border bg-secondary/40 py-16">
+      <section className="border-b border-border bg-secondary/40 py-8">
         <div className="container-x text-center">
           <div className="text-xs uppercase tracking-[0.35em] text-accent">Gallery</div>
           <h1 className="mt-2 text-4xl md:text-5xl">Estery in real homes</h1>
-          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
+          <p className="mx-auto mt-2 max-w-xl text-muted-foreground">
             Click any image to explore the piece featured in the scene.
           </p>
         </div>
       </section>
 
-      <section className="container-x py-16">
+      <section className="container-x py-8">
         <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 xl:columns-4 [column-fill:_balance]">
           {all.map((img, idx) => (
             <Link

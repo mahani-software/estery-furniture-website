@@ -4,6 +4,7 @@ import { SiteShell } from "@/components/site/SiteChrome";
 import { categories, products, formatUGX } from "@/lib/products";
 import logo from "@/assets/logo.png";
 import hero from "@/assets/hero.jpg";
+import badge from "@/assets/estery-badge.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -25,28 +26,39 @@ function Index() {
       <section className="relative overflow-hidden">
         <img src={hero} alt="Estery Furniture showroom" className="absolute inset-0 h-full w-full object-cover" width={1920} height={1200} />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/50 to-primary/85" />
-        <div className="container-x relative flex min-h-[85vh] flex-col items-center justify-center py-24 text-center text-primary-foreground">
-          <img src={logo} alt="Estery Furniture" className="h-48 w-48 object-contain drop-shadow-2xl md:h-64 md:w-64" width={256} height={256} />
-          <h1 className="mt-6 max-w-3xl text-4xl leading-tight md:text-6xl">
-            Furniture that tells your story.
-          </h1>
-          <p className="mt-5 max-w-xl text-base text-primary-foreground/85 md:text-lg">
-            Handcrafted sofas, beds, dining tables and accessories — designed and built in Kampala for homes that last a lifetime.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link to="/shop" className="rounded-full bg-accent px-7 py-3 text-sm font-medium text-accent-foreground transition hover:bg-accent/90">
-              Shop the Collection
-            </Link>
-            <Link to="/gallery" className="rounded-full border border-primary-foreground/60 px-7 py-3 text-sm font-medium text-primary-foreground transition hover:bg-primary-foreground/10">
-              View Gallery
-            </Link>
+        <div className="container-x relative grid gap-6 py-10 md:grid-cols-2 md:items-center md:gap-8 md:py-14 text-primary-foreground">
+          <div className="order-1 flex justify-center md:order-2">
+            <img
+              src={badge}
+              alt="Estery Furniture Factory — Kubiri, Wandegeya"
+              className="w-full max-w-md rounded-2xl object-contain shadow-2xl md:max-w-none"
+              width={800}
+              height={800}
+            />
+          </div>
+          <div className="order-2 text-center md:order-1 md:text-left">
+            <img src={logo} alt="Estery Furniture" className="mx-auto h-20 w-20 object-contain drop-shadow-2xl md:mx-0 md:h-24 md:w-24" width={96} height={96} />
+            <h1 className="mt-3 text-3xl leading-tight md:text-5xl">
+              Furniture that tells your story.
+            </h1>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-primary-foreground/85 md:mx-0 md:text-base">
+              Handcrafted sofas, beds, dining tables and accessories — designed and built in Kampala for homes that last a lifetime.
+            </p>
+            <div className="mt-4 flex flex-wrap justify-center gap-3 md:justify-start">
+              <Link to="/shop" className="rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-accent-foreground transition hover:bg-accent/90">
+                Shop the Collection
+              </Link>
+              <Link to="/gallery" className="rounded-full border border-primary-foreground/60 px-6 py-2.5 text-sm font-medium text-primary-foreground transition hover:bg-primary-foreground/10">
+                View Gallery
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Categories */}
-      <section className="container-x py-24">
-        <div className="mb-12 flex items-end justify-between gap-6">
+      <section className="container-x py-8">
+        <div className="mb-6 flex items-end justify-between gap-4">
           <div>
             <div className="text-xs uppercase tracking-[0.35em] text-accent">Collections</div>
             <h2 className="mt-2 text-3xl md:text-4xl">Explore every room</h2>
@@ -76,13 +88,13 @@ function Index() {
       </section>
 
       {/* Featured products */}
-      <section className="bg-secondary/50 py-24">
+      <section className="bg-secondary/50 py-8">
         <div className="container-x">
-          <div className="mb-12 text-center">
+          <div className="mb-6 text-center">
             <div className="text-xs uppercase tracking-[0.35em] text-accent">Featured</div>
             <h2 className="mt-2 text-3xl md:text-4xl">This season's favourites</h2>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {featured.map((p) => (
               <Link
                 key={p.id}
@@ -100,7 +112,7 @@ function Index() {
               </Link>
             ))}
           </div>
-          <div className="mt-10 text-center">
+          <div className="mt-2 text-center">
             <Link to="/shop" className="inline-block rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:bg-accent hover:text-accent-foreground">
               View all pieces
             </Link>
@@ -109,15 +121,15 @@ function Index() {
       </section>
 
       {/* Story strip */}
-      <section className="container-x grid gap-12 py-24 md:grid-cols-2 md:items-center">
+      <section className="container-x grid gap-4 py-8 md:grid-cols-2 md:items-center">
         <div>
           <div className="text-xs uppercase tracking-[0.35em] text-accent">Our Story</div>
           <h2 className="mt-2 text-3xl md:text-4xl">Made in Kampala. Made to last.</h2>
-          <p className="mt-5 text-muted-foreground">
+          <p className="mt-3 text-muted-foreground">
             For over a decade, Estery has partnered with Ugandan artisans to build furniture that pairs local craft with contemporary design.
             Every piece is joined by hand, finished in our Ntinda workshop, and delivered white-glove across East Africa.
           </p>
-          <Link to="/about" className="mt-6 inline-block text-sm font-medium text-accent hover:underline">
+          <Link to="/about" className="mt-2 inline-block text-sm font-medium text-accent hover:underline">
             Read our story →
           </Link>
         </div>

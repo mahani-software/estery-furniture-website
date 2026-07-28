@@ -27,15 +27,15 @@ function CategoryPage() {
   const { category, items } = Route.useLoaderData();
   return (
     <SiteShell>
-      <section className="border-b border-border bg-secondary/40 py-16">
+      <section className="border-b border-border bg-secondary/40 py-8">
         <div className="container-x">
           <div className="text-xs uppercase tracking-[0.35em] text-accent">Collection</div>
           <h1 className="mt-2 text-4xl md:text-5xl">{category.name}</h1>
-          <p className="mt-4 max-w-2xl text-muted-foreground">{category.desc}</p>
+          <p className="mt-2 max-w-2xl text-muted-foreground">{category.desc}</p>
         </div>
       </section>
-      <section className="container-x py-16">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <section className="container-x py-8">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {items.map((p) => (
             <Link key={p.id} to="/products/$id" params={{ id: p.id }} className="hover-lift group block overflow-hidden rounded-xl bg-card">
               <div className="aspect-[4/5] overflow-hidden">

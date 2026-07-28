@@ -25,15 +25,15 @@ const services = [
 function Services() {
   return (
     <SiteShell>
-      <section className="border-b border-border bg-secondary/40 py-16">
+      <section className="border-b border-border bg-secondary/40 py-8">
         <div className="container-x">
           <div className="text-xs uppercase tracking-[0.35em] text-accent">What we do</div>
           <h1 className="mt-2 text-4xl md:text-5xl">Services & craftsmanship</h1>
-          <p className="mt-4 max-w-2xl text-muted-foreground">From a single armchair to a full hotel fit-out, Estery handles design, build and delivery in-house.</p>
+          <p className="mt-2 max-w-2xl text-muted-foreground">From a single armchair to a full hotel fit-out, Estery handles design, build and delivery in-house.</p>
         </div>
       </section>
-      <section className="container-x py-16">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <section className="container-x py-8">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
             <div key={s.t} className="hover-lift rounded-xl border border-border bg-card p-8">
               <div className="font-display text-2xl text-primary">{s.t}</div>
