@@ -4,6 +4,7 @@ import { SiteShell } from "@/components/site/SiteChrome";
 import { categories, products, formatUGX } from "@/lib/products";
 import logo from "@/assets/logo.png";
 import hero from "@/assets/hero.jpg";
+import badge from "@/assets/estery-badge.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -25,21 +26,32 @@ function Index() {
       <section className="relative overflow-hidden">
         <img src={hero} alt="Estery Furniture showroom" className="absolute inset-0 h-full w-full object-cover" width={1920} height={1200} />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/50 to-primary/85" />
-        <div className="container-x relative flex min-h-[85vh] flex-col items-center justify-center py-8 text-center text-primary-foreground">
-          <img src={logo} alt="Estery Furniture" className="h-48 w-48 object-contain drop-shadow-2xl md:h-64 md:w-64" width={256} height={256} />
-          <h1 className="mt-2 max-w-3xl text-4xl leading-tight md:text-6xl">
-            Furniture that tells your story.
-          </h1>
-          <p className="mt-3 max-w-xl text-base text-primary-foreground/85 md:text-lg">
-            Handcrafted sofas, beds, dining tables and accessories — designed and built in Kampala for homes that last a lifetime.
-          </p>
-          <div className="mt-3 flex flex-wrap justify-center gap-3">
-            <Link to="/shop" className="rounded-full bg-accent px-7 py-3 text-sm font-medium text-accent-foreground transition hover:bg-accent/90">
-              Shop the Collection
-            </Link>
-            <Link to="/gallery" className="rounded-full border border-primary-foreground/60 px-7 py-3 text-sm font-medium text-primary-foreground transition hover:bg-primary-foreground/10">
-              View Gallery
-            </Link>
+        <div className="container-x relative grid gap-6 py-10 md:grid-cols-2 md:items-center md:gap-8 md:py-14 text-primary-foreground">
+          <div className="order-1 flex justify-center md:order-2">
+            <img
+              src={badge}
+              alt="Estery Furniture Factory — Kubiri, Wandegeya"
+              className="w-full max-w-md rounded-2xl object-contain shadow-2xl md:max-w-none"
+              width={800}
+              height={800}
+            />
+          </div>
+          <div className="order-2 text-center md:order-1 md:text-left">
+            <img src={logo} alt="Estery Furniture" className="mx-auto h-20 w-20 object-contain drop-shadow-2xl md:mx-0 md:h-24 md:w-24" width={96} height={96} />
+            <h1 className="mt-3 text-3xl leading-tight md:text-5xl">
+              Furniture that tells your story.
+            </h1>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-primary-foreground/85 md:mx-0 md:text-base">
+              Handcrafted sofas, beds, dining tables and accessories — designed and built in Kampala for homes that last a lifetime.
+            </p>
+            <div className="mt-4 flex flex-wrap justify-center gap-3 md:justify-start">
+              <Link to="/shop" className="rounded-full bg-accent px-6 py-2.5 text-sm font-medium text-accent-foreground transition hover:bg-accent/90">
+                Shop the Collection
+              </Link>
+              <Link to="/gallery" className="rounded-full border border-primary-foreground/60 px-6 py-2.5 text-sm font-medium text-primary-foreground transition hover:bg-primary-foreground/10">
+                View Gallery
+              </Link>
+            </div>
           </div>
         </div>
       </section>
