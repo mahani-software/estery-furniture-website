@@ -17,14 +17,14 @@ export const Route = createFileRoute("/shop")({
 function Shop() {
   return (
     <SiteShell>
-      <section className="border-b border-border bg-secondary/40 py-16">
+      <section className="border-b border-border bg-secondary/40 py-8">
         <div className="container-x">
           <div className="text-xs uppercase tracking-[0.35em] text-accent">The Collection</div>
           <h1 className="mt-2 text-4xl md:text-5xl">Shop all furniture</h1>
-          <p className="mt-4 max-w-2xl text-muted-foreground">
+          <p className="mt-2 max-w-2xl text-muted-foreground">
             Every piece is designed in-house and built by artisans in our Kampala workshop. Click any image to see full details.
           </p>
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div className="mt-2 flex flex-wrap gap-2">
             {categories.map((c) => (
               <Link
                 key={c.slug}
@@ -39,8 +39,8 @@ function Shop() {
         </div>
       </section>
 
-      <section className="container-x py-16">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <section className="container-x py-8">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {products.map((p) => (
             <Link
               key={p.id}
