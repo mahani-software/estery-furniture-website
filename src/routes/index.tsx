@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { SiteShell } from "@/components/site/SiteChrome";
 import { categories, products, formatUGX } from "@/lib/products";
-import hero from "@/assets/hero.jpg";
+const hero = "https://res.cloudinary.com/dqiywiqk0/image/upload/v1785417336/image066_afd8pl.jpg";
 import badge from "@/assets/estery-badge.jpeg";
 
 export const Route = createFileRoute("/")({
