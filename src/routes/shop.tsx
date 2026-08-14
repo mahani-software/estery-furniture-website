@@ -6,7 +6,7 @@ export const Route = createFileRoute("/shop")({
   head: () => ({
     meta: [
       { title: "Shop All Furniture — Estery Furniture Kampala" },
-      { name: "description", content: "Browse the full Estery Furniture collection: living room, bedroom, dining, office, outdoor and accessories." },
+      { name: "description", content: "Browse the full Estery Furniture collection: sofa sets, beds, dining sets, office desks, TV stands, doors and kids furniture." },
       { property: "og:title", content: "Shop All Furniture — Estery Furniture" },
       { property: "og:description", content: "The full Estery collection — handcrafted in Kampala." },
     ],
