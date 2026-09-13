@@ -36,13 +36,13 @@ jobs:
       - name: Deploy to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .output/public
+          folder: dist
           branch: gh-pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .output/public
+          path: dist
 
   deploy-pages:
     environment:
