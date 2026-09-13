@@ -51,7 +51,7 @@ function ProductPage() {
             <div className="mt-3 grid grid-cols-2 gap-4 rounded-xl border border-border bg-card p-5 text-sm">
               <div><div className="text-xs uppercase tracking-widest text-accent">Materials</div><div className="mt-1">Solid hardwood, brass hardware</div></div>
               <div><div className="text-xs uppercase tracking-widest text-accent">Lead time</div><div className="mt-1">3–5 weeks</div></div>
-              <div><div className="text-xs uppercase tracking-widest text-accent">Warranty</div><div className="mt-1">5 years</div></div>
+              <div><div className="text-xs uppercase tracking-widest text-accent">Warranty</div><div className="mt-1"> 3 months </div></div>
               <div><div className="text-xs uppercase tracking-widest text-accent">Delivery</div><div className="mt-1">Free within Kampala</div></div>
             </div>
 

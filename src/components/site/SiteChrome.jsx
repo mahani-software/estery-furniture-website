@@ -57,7 +57,7 @@ export function SiteFooter() {
         </div>
         <div>
           <div className="mb-3 text-xs uppercase tracking-[0.3em] text-accent">Showroom</div>
-          <p className="text-sm text-primary-foreground/80">Plot 42, Ntinda Industrial Area<br />Kampala, Uganda</p>
+          <p className="text-sm text-primary-foreground/80"> Kubiri, Wandegeya - Kalerwe, Gayaza road <br />Kampala, Uganda</p>
           <p className="mt-3 text-sm">Mon–Sat · 9:00–19:00</p>
         </div>
         <div>

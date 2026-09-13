@@ -26,7 +26,7 @@ function Contact() {
             Come see, touch and sit on every piece before you commit. Our design team is on hand to help you plan a room, a home or a full project.
           </p>
           <div className="mt-3 space-y-4 text-sm">
-            <div><div className="text-xs uppercase tracking-widest text-accent">Showroom</div><div className="mt-1">Plot 42, Ntinda Industrial Area, Kampala</div></div>
+            <div><div className="text-xs uppercase tracking-widest text-accent">Showroom</div><div className="mt-1">Kubiri, Wandegeya - Kalerwe, Gayaza road, Kampala</div></div>
             <div><div className="text-xs uppercase tracking-widest text-accent">Hours</div><div className="mt-1">Mon–Sat · 9:00–19:00</div></div>
             <div><div className="text-xs uppercase tracking-widest text-accent">Phone</div><div className="mt-1">+256-776-804433</div></div>
             <div><div className="text-xs uppercase tracking-widest text-accent">Email</div><div className="mt-1">esteryfurniture2@gmail.com</div></div>
